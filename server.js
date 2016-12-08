@@ -34,7 +34,7 @@ var argv = yargs
       description: 'Web Server Listener Port',
       required: true,
       alias: 'p',
-      default: 8080
+      default: 80
     },
     issuer: {
       description: 'OpenID Connect Provider Issuer URL',
