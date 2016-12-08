@@ -9,8 +9,8 @@
 }(this, function () {
 
     return {
-      orgUrl: 'https://example.oktapreview.com',
-      clientId: 'ANRZhyDh8HBFN5abN6Rg',
+      orgUrl: 'https://grdemo.okta.com',
+      clientId: '8tK4sFKAfIJk6tZULlQP',
       idp: '0oa5kecjfwuF4HQ4w0h7',
       scope: ['openid', 'email', 'profile', 'phone', 'groups']
     };
