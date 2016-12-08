@@ -1,13 +1,13 @@
 {
   "name": "oidc-api",
   "version": "0.0.2",
-  "description": "Sample OpenID Connect id_token protected resource API",
+  "description": "Sample OpenID Connect id_token protected resource API for OpenShift",
   "private": true,
   "main": "server.js",
   "scripts": {
-    "start": "node server.js | bunyan -o short"
+    "start": "node server.js"
   },
-  "author": "Karl McGuinness",
+  "author": "Karl McGuinness updated by Gareth Rees",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.0",
