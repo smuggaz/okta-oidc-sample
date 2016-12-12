@@ -5,7 +5,7 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "start": "node server.js --iss $ISSUER -aud $AUDIENCE"
+    "start": "node server.js --iss $ISSUER --aud $AUDIENCE"
   },
   "author": "Karl McGuinness updated by Gareth Rees",
   "license": "MIT",
