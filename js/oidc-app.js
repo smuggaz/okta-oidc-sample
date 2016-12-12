@@ -15,10 +15,10 @@ define(["jquery", "okta-auth-sdk", "okta-config"], function($, OktaAuth, OktaCon
   console.log('Okta Configuration: %o', OktaConfig);
   console.log(OktaAuth);
   var client = new OktaAuth({
-    //url: OktaConfig.orgUrl,
-    //clientId: OktaConfig.clientId,
-	url: argv.issuer,
-	clientId: argv.audience,
+    url: OktaConfig.orgUrl,
+    clientId: OktaConfig.clientId,
+	//url: argv.issuer,
+	//clientId: argv.audience,
     redirectUri: window.location.href
   });
 
