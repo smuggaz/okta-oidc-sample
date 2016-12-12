@@ -1,3 +1,6 @@
+// Updated to use the Environment Command Line Args.
+
+
 requirejs.config({
     "baseUrl": "js",
     "paths": {

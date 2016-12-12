@@ -27,9 +27,12 @@ You can find the main javascript code and html in `/js/widget-app.js` and html i
 
 ## Prerequisites
 
-1. Install [node.js and npm](https://nodejs.org/en/download/) on your developer machine
+1. Create A Github account.
 2. Clone this Github repository to a local working directory
-3. Run `npm install` from your local working directory to install all dependencies
+3. Create a OpenShift account and deploy the cloned version of this repo.
+4. In the development Environment Variables create the following:
+	* ISSUER https://example.oktapreview.com
+	* AUDIENCE ANRZhyDh8HBFN5abN6Rg
 
 ## Setup
 
@@ -52,14 +55,7 @@ You can find the main javascript code and html in `/js/widget-app.js` and html i
     7. Copy the **"Client ID"** for your new application
     8. Navigate to the Groups tab for the new app and assign the everyone group
 
-3. Update `/js/config.js` with your Okta organization URL and the **"Client ID"** you copied from your OIDC Application in step 7
-
-    ```
-    return {
-      orgUrl: 'https://example.oktapreview.com',
-      clientId: 'ANRZhyDh8HBFN5abN6Rg'
-    };
-    ```
+3. Not Used with OpenShift.
 
 4. Install npm packages with `npm install`
 
