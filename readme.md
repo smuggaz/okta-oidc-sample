@@ -1,7 +1,7 @@
 # Overview
 
 Sample Single-Page Web App (SPA) for Okta OpenID Connect (OIDC) 
-* Modified for OpenShift Deployment *
+* Modified for OpenShift Deployment. *
 
 ## Sample Scenarios
 
