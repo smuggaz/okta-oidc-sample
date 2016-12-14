@@ -9,7 +9,7 @@ Sample Single-Page Web App (SPA) for Okta OpenID Connect (OIDC)
 
 You can find the main javascript code in `/js/oidc-app.js` and html in `oidc.html`
 
-This sample demonstrates the OpenID Connect implicit flow: Stuff
+This sample demonstrates the OpenID Connect implicit flow:
 
 - Sign in with Password: Authenticates user with [name/password](http://developer.okta.com/docs/api/resources/authn.html#primary-authentication-with-public-application) and exchanges a [sessionToken](http://developer.okta.com/docs/api/resources/authn.html#session-token) for an `id_token` (JWT) using a hidden iframe
 - Sign in with IdP: Authenticates user by [redirecting to an external Identity Provider (IdP)](http://developer.okta.com/docs/api/resources/social_authentication.html) such as Facebook in a popup window and returns an `id_token` (JWT) for the user via a hidden iframe
