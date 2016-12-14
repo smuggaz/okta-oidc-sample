@@ -74,6 +74,8 @@ If you are using OpenShift you can skip the next 4 steps which are only used for
 
 7. Visit `http://localhost:8080/widget.html` to launch the "Okta Sign-In Widget Sample App"
 
+8. Depending on Deployment Update Package.json as follows "start": "node server.js --iss $ISSUER --aud $AUDIENCE"
+
 ## Social Authentication
 
 The Okta Sign-In Widget also supports Social Authentication.  You need to first add a Social IdP via the Okta Admin UI and obtain the `id` for the IdP which is found in the **Authorize URL** such as https://example.okta.com/oauth2/v1/authorize?idp=**0oabzpziblMwBLLqO0g4**.
