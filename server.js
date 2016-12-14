@@ -56,6 +56,7 @@ var argv = yargs
 
 
 console.log();
+console.log('Modified for OpenShift Deployment:\n\t' + argv.port);
 console.log('Listener Port:\n\t' + argv.port);
 console.log('OIDC Issuer URL:\n\t' + argv.issuer);
 console.log('Audience URI:\n\t' + argv.audience);

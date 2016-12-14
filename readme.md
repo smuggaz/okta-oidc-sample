@@ -1,6 +1,7 @@
 # Overview
 
-Sample Single-Page Web App (SPA) for Okta OpenID Connect (OIDC) Modified for OpenShift Deployment.
+Sample Single-Page Web App (SPA) for Okta OpenID Connect (OIDC) 
+* Modified for OpenShift Deployment *
 
 ## Sample Scenarios
 
@@ -36,7 +37,7 @@ You can find the main javascript code and html in `/js/widget-app.js` and html i
 
 ## Setup
 
-> This document assumes you host this app on `http://localhost:8080/`
+> This document assumes you host this app on `http://localhost:8080/` however if you are using OpenShift then you will have a deployment specific URL.
 
 1. Grant the app [CORS access](http://developer.okta.com/docs/api/getting_started/enabling_cors.html) in your Okta organization (e.g. `http://localhost:8080/`)
 
@@ -55,7 +56,15 @@ You can find the main javascript code and html in `/js/widget-app.js` and html i
     7. Copy the **"Client ID"** for your new application
     8. Navigate to the Groups tab for the new app and assign the everyone group
 
-3. Not Used with OpenShift.
+3. Update `/js/config.js` with your Okta organization URL and the **"Client ID"** you copied from your OIDC Application in step 7 (Note this is needed for all client side components)
+
+    ```
+    return {
+      orgUrl: 'https://example.oktapreview.com',
+      clientId: 'ANRZhyDh8HBFN5abN6Rg'
+    };
+
+If you are using OpenShift you can skip the next 4 steps which are only used for local deployment using NodeNS
 
 4. Install npm packages with `npm install`
 
